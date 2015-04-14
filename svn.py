@@ -23,7 +23,7 @@ if is_up == 'Y':
 	has_conflict = False
 	up_log_lines = up_log.split('\n')
 	for up_log_line in up_log_lines:
-		up_log_line_arr = up_log_line.split('\t\t')
+		up_log_line_arr = up_log_line.split('       ')
 		if 'C' == up_log_line_arr[0]:
 			print 'conflicts exist in ' + up_log_line_arr[1]
 			has_conflict = True
